@@ -6,7 +6,7 @@
 
 ### Emergency "911" Button:
 - Whisper your target with a distress message: *"HELP! I am next to you"*
-- Notify your party with a help message: *"HELP guys"*
+- Notify your party with a help message: *"Guys save me"*
 - Yell *"HELP!"* to alert nearby players.
 
 ### Stay Safe Button:
