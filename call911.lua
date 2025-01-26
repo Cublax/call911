@@ -75,7 +75,7 @@ local function create911Button()
         whisperTarget(whisperMessage)
 
         -- Send the message to the group chat
-        local groupMessage = "HELP guys"
+        local groupMessage = "Guys save me"
         if IsInGroup() then
             SendChatMessage(groupMessage, "PARTY")
         else
