@@ -30,7 +30,6 @@ local function whisperTarget(message)
     if UnitExists("target") and UnitIsPlayer("target") and UnitIsFriend("player", "target") then
         local targetName = UnitName("target")
         SendChatMessage(message, "WHISPER", nil, targetName)
-        print("Whispered to target:", targetName)
     else
         print("No valid target to whisper.")
     end
@@ -40,12 +39,10 @@ end
 local function sendStaySafeMessage()
     if IsInGroup() then
         -- Send to group chat
-        SendChatMessage("Stay safe!", "PARTY")
-        print("Message sent to group: Stay safe!")
+        SendChatMessage("Stay safe", "PARTY")
     else
         -- Say it in /s
-        SendChatMessage("Stay safe!", "SAY")
-        print("Message sent to say chat: Stay safe!")
+        SendChatMessage("Stay safe", "SAY")
     end
 end
 
@@ -74,14 +71,13 @@ local function create911Button()
     button911:SetText("911")
     button911:SetScript("OnClick", function()
         -- Whisper to the target player
-        local whisperMessage = "I am next to you please save me!"
+        local whisperMessage = "HELP! I am next to you"
         whisperTarget(whisperMessage)
 
         -- Send the message to the group chat
-        local groupMessage = "Guys help me out I am gonna die!"
+        local groupMessage = "HELP guys"
         if IsInGroup() then
             SendChatMessage(groupMessage, "PARTY")
-            print("Message sent to group:", groupMessage)
         else
             print("Not in a group to send help message.")
         end
