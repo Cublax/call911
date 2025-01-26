@@ -5,8 +5,8 @@
 ## Key Features
 
 ### Emergency "911" Button:
-- Whisper your target with a distress message: *"I am next to you, please save me!"*
-- Notify your party with a help message: *"Guys save me."*
+- Whisper your target with a distress message: *"HELP! I am next to you"*
+- Notify your party with a help message: *"HELP guys"*
 - Yell *"HELP!"* to alert nearby players.
 
 ### Stay Safe Button:
